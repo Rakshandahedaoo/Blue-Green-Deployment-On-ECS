@@ -76,6 +76,119 @@
     {
       "targetId": null,
       "targetType": null,
+50
+      "extraHosts": null,
+51
+      "pseudoTerminal": null,
+52
+      "user": null,
+53
+      "readonlyRootFilesystem": null,
+54
+      "dockerLabels": null,
+55
+      "systemControls": null,
+56
+      "privileged": null,
+57
+      "name": "bluegreencontainer"
+58
+    }
+59
+  ],
+60
+  "placementConstraints": [],
+61
+  "memory": "512",
+62
+  "taskRoleArn": null,
+63
+  "compatibilities": [
+64
+    "EC2",
+65
+    "FARGATE"
+66
+  ],
+67
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:265637824843:task-definition/bluegreen-taskdef:2",
+68
+  "family": "bluegreen-taskdef",
+69
+  "requiresAttributes": [
+70
+    {
+71
+      "targetId": null,
+72
+      "targetType": null,
+73
+      "value": null,
+74
+      "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+75
+    },
+76
+    {
+77
+      "targetId": null,
+78
+      "targetType": null,
+79
+      "value": null,
+80
+      "name": "ecs.capability.execution-role-awslogs"
+81
+    },
+82
+    {
+83
+      "targetId": null,
+84
+      "targetType": null,
+85
+      "value": null,
+86
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+87
+    },
+88
+    {
+89
+      "targetId": null,
+90
+      "targetType": null,
+91
+      "value": null,
+92
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+93
+    },
+94
+    {
+95
+      "targetId": null,
+96
+      "targetType": null,
+97
+      "value": null,
+98
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+99
+    },
+100
+    {
+101
+      "targetId": null,
+102
+      "targetType": null,
+103
+      "value": null,
+104
+      "name": "ecs.capability.execution-role-ecr-pull"
+105
+    },
+
       "value": null,
       "name": "ecs.capability.execution-role-awslogs"
     },
