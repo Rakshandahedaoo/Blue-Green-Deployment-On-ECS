@@ -1,4 +1,4 @@
-version: 16
+version: 12
 Resources:
  - TargetService:
      Type: AWS::ECS::Service
