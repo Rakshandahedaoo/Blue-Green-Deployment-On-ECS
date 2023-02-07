@@ -64,7 +64,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "<ImageURI>",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:265637824843:task-definition/bluegreen-taskdef:11",
   "family": "bluegreen-taskdef",
   "requiresAttributes": [
     {
