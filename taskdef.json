@@ -54,17 +54,17 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "bluegeencontainer"
+      "name": "bluegreencontainer"
     }
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": null,
+  "taskRoleArn": "arn:aws:iam::265637824843:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:265637824843:task-definition/bluegreen-taskdef:4",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:265637824843:task-definition/bluegreen-taskdef:11",
   "family": "bluegreen-taskdef",
   "requiresAttributes": [
     {
@@ -101,6 +101,12 @@
       "targetId": null,
       "targetType": null,
       "value": null,
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
       "name": "ecs.capability.execution-role-ecr-pull"
     },
     {
@@ -126,7 +132,7 @@
     "cpuArchitecture": null
   },
   "cpu": "256",
-  "revision": 4,
+  "revision": 11,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
