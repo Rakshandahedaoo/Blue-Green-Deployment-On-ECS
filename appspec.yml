@@ -3,7 +3,7 @@ Resources:
  - TargetService:
      Type: AWS::ECS::Service
      Properties:
-       TaskDefinition: "<ImageURI>"
+       TaskDefinition: "arn:aws:ecs:us-east-1:265637824843:task-definition/bluegreen-taskdef:11",
        LoadBalancerInfo:
          ContainerName: "bluegreencontainer"
          ContainerPort: 8080
